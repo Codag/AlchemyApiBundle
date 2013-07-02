@@ -32,4 +32,8 @@ class AlchemyAPI {
         return new Methods\EntityExtraction($this->apiKey, $this->apiUrlPrefix);
     }
 
+    public function getApiKey(){
+        return $this->apiKey;
+    }
+
 }
