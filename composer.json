@@ -1,0 +1,23 @@
+{
+    "name": "codag/alchemyapi-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony2 Bundle for AlchemyAPI integration",
+    "keywords": ["alchemyapi","alchemy", "api"],
+    "homepage": "http://www.codag.ch",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc Juchli",
+            "email": "mj@codag.ch"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": "2.*",
+        "kriswallsmith/buzz":">=0.7"
+    },
+    "autoload": {
+        "psr-0": { "Codag\\AlchemyApiBundle": "" }
+    },
+    "target-dir": "Codag/AlchemyApiBundle"
+}
