@@ -15,21 +15,21 @@ use Symfony\Component\HttpFoundation\Request;
 
 /**
  * AlchemyApi
+ * http://www.alchemyapi.com/api/
  *
  * @author Marc Juchli <mj@codag.ch>
  */
 class AlchemyAPI {
 
     protected $apiKey;
-    protected $apiUrlPrefix;
+    protected $apiUrlPrefix = "http://access.alchemyapi.com/calls/";
 
     public function __construct($apiKey){
         $this->apiKey = $apiKey;
-        $this->apiUrlPrefix = "http://access.alchemyapi.com/calls/url/";
     }
 
     public function getEntityExtraction(){
-        return new Methods\EntityExtraction($this->apiKey, $this->apiUrlPrefix);
+        return new Methods\EntityExtraction($this->apiKey);
     }
 
     public function getApiKey(){
