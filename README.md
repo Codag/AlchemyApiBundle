@@ -68,7 +68,11 @@ codag_alchemy_api:
 ```
 
 ## Usage
-
+This bundle provides the service `codag.alchemyapi`
+```php
+<?php
+$alchemy = $this->get('codag.alchemyapi');
+```
 ### Entity Extraction
 
 #### HTML API
