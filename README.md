@@ -76,11 +76,24 @@ $alchemy = $this->get('codag.alchemyapi');
 ### Entity Extraction
 
 #### HTML API
-
+```php
+//TODO
+```
 #### Text API
+```php
+//TODO
+```
+**Web API** ([URLGetRankedNamedEntities](http://www.alchemyapi.com/api/entity/urls.html))
 
-#### Web API
-
+```php
+$alchemy = $this->alchemy;
+$entityExtraction = $alchemy
+    ->getEntityExtraction()
+    ->getWeb();
+$entityExtraction->setUrl($this->url);
+$entityExtraction->setOutputMode('json');
+$data = $entityExtraction->getData();
+```
 ##Contribute
 
 If the bundle doesn't allow you to customize an option, I invite you to fork the project, create a feature branch, and send a pull request.
