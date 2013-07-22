@@ -10,6 +10,7 @@
  */
 
 namespace Codag\AlchemyApiBundle\Services;
+
 use  Buzz\Browser, Buzz\Client\Curl;
 
 /**
