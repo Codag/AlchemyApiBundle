@@ -6,7 +6,7 @@
 
     <parameters>
         <parameter key="codag_alchemy_api.api_key">null</parameter>
-        <parameter key="codag_alchemy_api.alchemyapi.service.class">Codag\AlchemyApiBundle\Services\AlchemyApi</parameter>
+        <parameter key="codag_alchemy_api.alchemyapi.service.class">Codag\AlchemyApiBundle\Services\AlchemyAPI</parameter>
     </parameters>
 
     <services>
